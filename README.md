@@ -50,7 +50,13 @@
     <label for="date">予約日</label>
     <input type="date" id="date" name="date" required />
 
-    <label for="message">メッセージ</label>
+    <label for="from">発送元住所</label>
+    <input type="text" id="from" name="from" required />
+
+    <label for="to">発送先住所</label>
+    <input type="text" id="to" name="to" required />
+
+    <label for="message">備考・メッセージ</label>
     <textarea id="message" name="message" rows="4"></textarea>
 
     <button type="submit">送信</button>
