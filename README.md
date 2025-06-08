@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
@@ -11,6 +10,33 @@
     button { margin-top: 20px; padding: 10px 15px; background: #4caf50; color: white; border: none; border-radius: 4px; cursor: pointer; }
     button:hover { background: #45a049; }
     #status { margin-top: 15px; font-weight: bold; }
+    
+  .responsive-iframe-container {
+    position: relative;
+    width: 100%;
+    padding-top: 70%; /* 高さ比率（必要に応じて調整） */
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    margin: 20px auto;
+    max-width: 1200px;
+  }
+
+  .responsive-iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+
+  @media (max-width: 600px) {
+    .responsive-iframe-container {
+      padding-top: 120%; /* スマホは縦長に調整 */
+    }
+  }
+
   </style>
 </head>
 <body>
