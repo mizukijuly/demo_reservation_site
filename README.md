@@ -157,7 +157,7 @@
           <option value="">選択してください</option>
           <option value="対面で受け渡し">対面で受け渡し</option>
           <option value="玄関前に置く">玄関前に置く</option>
-          <option value="その他指定の場所　※要望欄に記入をお願いいたします">玄関前に置く</option>
+          <option value="その他指定の場所">その他指定の場所　※要望欄に記入をお願いいたします</option>
         </select>
       </div>
 
