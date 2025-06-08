@@ -14,6 +14,9 @@
   </style>
 </head>
 <body>
+
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSZNTzUfoN7HbKfX-k_ZziFDy9H8OD_LTQSzLjX1CA0r0Of5AjU59ksiAa8bP3ws1TswZb1kWqdomkh/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+  
   <form id="reservationForm">
     <label for="name">お名前</label>
     <input type="text" id="name" name="name" required />
