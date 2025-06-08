@@ -157,12 +157,17 @@
           <option value="">選択してください</option>
           <option value="対面で受け渡し">対面で受け渡し</option>
           <option value="玄関前に置く">玄関前に置く</option>
-          <option value="宅配業者を使用">宅配業者を使用</option>
+          <option value="その他指定の場所　※要望欄に記入をお願いいたします">玄関前に置く</option>
         </select>
       </div>
 
       <div class="form-group">
-        <label for="date">発送希望日</label>
+        <label for="date">引取希望日</label>
+        <input type="date" id="date" name="date" required />
+      </div>
+
+      <div class="form-group">
+        <label for="date">到着希望日</label>
         <input type="date" id="date" name="date" required />
       </div>
 
