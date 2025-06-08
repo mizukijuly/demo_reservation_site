@@ -137,17 +137,22 @@
       </div>
 
       <div class="form-group">
+        <label for="tel">電話番号</label>
+        <input type="text" id="tel" name="tel" required />
+      </div>
+
+      <div class="form-group">
         <label for="email">メールアドレス</label>
         <input type="email" id="email" name="email" required />
       </div>
 
       <div class="form-group">
-        <label for="pickup">発送元</label>
+        <label for="pickup">バイク引き取り時の住所</label>
         <input type="text" id="pickup" name="pickup" required />
       </div>
 
       <div class="form-group">
-        <label for="destination">発送先</label>
+        <label for="destination">バイクの送り先</label>
         <input type="text" id="destination" name="destination" required />
       </div>
 
