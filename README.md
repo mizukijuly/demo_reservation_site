@@ -38,39 +38,43 @@
   }
 
   .form-container {
-    max-width: 800px;
-    margin: 30px auto;
-    padding: 20px;
-    background: #f8f8f8;
-    border-radius: 12px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #f9f9f9;
+    border-radius: 16px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
     box-sizing: border-box;
   }
 
   .form-container h2 {
-    margin-bottom: 20px;
-    font-size: 24px;
+    margin-bottom: 24px;
+    font-size: 28px;
     text-align: center;
   }
 
   .form-group {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
   }
 
   .form-group label {
-    margin-bottom: 5px;
+    margin-bottom: 6px;
     font-weight: bold;
+    font-size: 16px;
   }
 
   .form-group input,
   .form-group textarea,
   .form-group select {
-    padding: 10px;
+    padding: 12px;
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 8px;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .form-group textarea {
@@ -79,13 +83,13 @@
 
   .form-submit {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 25px;
   }
 
   .form-submit button {
     background-color: #007bff;
     color: white;
-    padding: 12px 24px;
+    padding: 14px 28px;
     font-size: 16px;
     border: none;
     border-radius: 8px;
@@ -96,20 +100,24 @@
     background-color: #0056b3;
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 768px) {
     .form-container {
-      padding: 15px;
+      padding: 20px;
+    }
+
+    .form-group label {
+      font-size: 15px;
     }
 
     .form-group input,
     .form-group textarea,
     .form-group select {
-      font-size: 14px;
+      font-size: 15px;
     }
 
     .form-submit button {
-      font-size: 14px;
-      padding: 10px 20px;
+      font-size: 15px;
+      padding: 12px 24px;
     }
   }
   
