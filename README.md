@@ -11,21 +11,20 @@
     button:hover { background: #45a049; }
     #status { margin-top: 15px; font-weight: bold; }
     
-  .responsive-iframe-container {
-    position: relative;
+  .responsive-iframe-wrapper {
     width: 100%;
-    padding-top: 70%; /* 高さ比率（必要に応じて調整） */
-    overflow: hidden;
+    overflow-x: auto;
+  }
+
+  .responsive-iframe-container {
+    width: 1200px; /* 固定幅でスプレッドシートの全列を表示 */
+    height: 800px;
     border-radius: 12px;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    margin: 20px auto;
-    max-width: 1200px;
+    margin: 0 auto;
   }
 
   .responsive-iframe-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
     border: 0;
@@ -33,10 +32,10 @@
 
   @media (max-width: 600px) {
     .responsive-iframe-container {
-      padding-top: 120%; /* スマホは縦長に調整 */
+      width: 1000px; /* スマホ用でも横に広く保つ */
+      height: 900px;
     }
   }
-
   </style>
 </head>
 <body>
