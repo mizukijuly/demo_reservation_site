@@ -123,28 +123,55 @@
 
 </div>
   
-  <form id="reservationForm">
-    <label for="name">お名前</label>
-    <input type="text" id="name" name="name" required />
 
-    <label for="date">受け渡し希望日</label>
-    <input type="date" id="date" name="date" required />
+<div class="form-container">
+  <h2>予約フォーム</h2>
+  <form id="bookingForm">
+    <div class="form-group">
+      <label for="name">お名前</label>
+      <input type="text" id="name" name="name" required />
+    </div>
 
-    <label for="date">発送希望日</label>
-    <input type="date" id="date" name="date" required />
+    <div class="form-group">
+      <label for="email">メールアドレス</label>
+      <input type="email" id="email" name="email" required />
+    </div>
 
-    <label for="from">発送元住所</label>
-    <input type="text" id="from" name="from" required />
+    <div class="form-group">
+      <label for="pickup">発送元（住所や施設名）</label>
+      <input type="text" id="pickup" name="pickup" required />
+    </div>
 
-    <label for="to">発送先住所</label>
-    <input type="text" id="to" name="to" required />
+    <div class="form-group">
+      <label for="destination">発送先</label>
+      <input type="text" id="destination" name="destination" required />
+    </div>
 
-    <label for="message">備考・メッセージ</label>
-    <textarea id="message" name="message" rows="4"></textarea>
+    <div class="form-group">
+      <label for="delivery_method">受け渡し方法</label>
+      <select id="delivery_method" name="delivery_method" required>
+        <option value="">選択してください</option>
+        <option value="対面で受け渡し">対面で受け渡し</option>
+        <option value="玄関前に置く">玄関前に置く</option>
+        <option value="宅配業者を使用">宅配業者を使用</option>
+      </select>
+    </div>
 
-    <button type="submit">送信</button>
-    <div id="status"></div>
+    <div class="form-group">
+      <label for="date">発送希望日</label>
+      <input type="date" id="date" name="date" required />
+    </div>
+
+    <div class="form-group">
+      <label for="message">ご要望・メモ</label>
+      <textarea id="message" name="message" rows="4"></textarea>
+    </div>
+
+    <div class="form-submit">
+      <button type="submit">予約する</button>
+    </div>
   </form>
+</div>
 
   <script>
     const GAS_WEBAPP_URL = 'YOUR_GAS_DEPLOY_URL'; // ①で控えたWebアプリURLをここに貼る
