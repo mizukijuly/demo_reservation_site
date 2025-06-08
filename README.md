@@ -47,7 +47,10 @@
     <label for="name">お名前</label>
     <input type="text" id="name" name="name" required />
 
-    <label for="date">予約日</label>
+    <label for="date">受け渡し希望日</label>
+    <input type="date" id="date" name="date" required />
+
+    <label for="date">発送希望日</label>
     <input type="date" id="date" name="date" required />
 
     <label for="from">発送元住所</label>
